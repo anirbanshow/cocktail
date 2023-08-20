@@ -11,3 +11,287 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*** Basic Config ***/
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1.25rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*** Navbar Style ***/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 5rem;
+  border-bottom: 2px solid #476a2e;
+  box-shadow: 2px 5px 3px 0 rgba(0, 0, 0, .5);
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: all .3s linear;
+}
+
+
+/*** About Page ***/
+.section {
+  padding: 5rem 0;
+}
+
+.about-section {
+  width: 85vw;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: .3rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.about-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/*** Error Page ***/
+.section {
+  padding: 5rem 0;
+}
+
+.error-page {
+  display: flex;
+  justify-content: center;
+}
+
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.btn,
+.btn-primary,
+.btn-white {
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: #476a2e;
+  border: 2px solid #476a2e;
+  padding: .45rem .8rem;
+  transition: all .3s linear;
+  cursor: pointer;
+  font-size: .8rem;
+  background: transparent;
+  border-radius: .25rem;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #476a2e;
+  color: #fff;
+  border-color: transparent;
+}
+
+
+/*** Search Component Design ***/
+.search-form {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 40rem;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  text-transform: capitalize;
+  border-radius: .25rem;
+  box-shadow: 2px 5px 3px 0 rgba(0, 0, 0, .5);
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .25rem;
+  color: #476a2e;
+}
+
+.form-control input {
+  width: 100%;
+  border: transparent;
+  background: #f1f5f8;
+  border-radius: .25rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: .3rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.loader {
+  height: 100px;
+  object-fit: contain;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/*** Cocktails List ***/
+.cocktails-center {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
+  grid-column-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.cocktail {
+  background: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 2px 5px 3px 0 rgba(0, 0, 0, .5);
+  transition: all .3s linear;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: .25rem;
+}
+
+.cocktail img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.cocktail-footer {
+  padding: 1.5rem;
+}
+
+.cocktail-footer h3 {
+  font-size: 2rem;
+}
+
+.cocktail-footer h3,
+.cocktail-footer h4,
+.cocktail-footer p {
+  margin-bottom: .3rem;
+}
+
+.cocktail-footer p {
+  color: #afafaf;
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .cocktails-center {
+    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+}
+
+
+/*** Single Cocktail ***/
+.cocktail-section {
+  text-align: center;
+}
+
+.drink {
+  width: 85vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.drink img {
+  border-radius: 0.25rem;
+  border-radius: 5px;
+}
+
+.drink-info {
+  padding-top: 2rem;
+}
+
+.drink p {
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.8;
+}
+
+.drink span {
+  margin-right: .5rem;
+}
+
+.drink-data {
+  background: #d4e6a5;
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  color: #476a2e;
+}
+
+@media screen and (min-width: 992px) {
+  .drink {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 3rem;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .drink-info {
+    padding-top: 0;
+  }
+}
